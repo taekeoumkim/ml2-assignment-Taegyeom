@@ -1,0 +1,55 @@
+{
+  "model_name": "RandomForestRegressor",
+  "saved_at": "2026-10-07T07:44:04.819184+00:00",
+  "selected_search_method": "Optuna",
+  "best_params": {
+    "n_estimators": 175,
+    "max_depth": 12
+  },
+  "cv_mean": 0.8212542415716282,
+  "cv_std": 0.06428073023916543,
+  "final_test_r2": 0.8910932915341476,
+  "baseline_settings": {
+    "n_estimators": 100,
+    "max_depth": null
+  },
+  "tuned_candidate_settings": {
+    "n_estimators": 175,
+    "max_depth": 12
+  },
+  "tuned_candidate_search_method": "Optuna",
+  "tuning_cv_comparison": [
+    {
+      "model": "Baseline",
+      "train_mean": 0.9736781487775229,
+      "cv_mean": 0.8190106975986836,
+      "cv_std": 0.07036957021229155,
+      "train_valid_gap": 0.1546674511788393
+    },
+    {
+      "model": "Tuned",
+      "train_mean": 0.9726922785657429,
+      "cv_mean": 0.8212542415716282,
+      "cv_std": 0.06428073023916543,
+      "train_valid_gap": 0.15143803699411473
+    }
+  ],
+  "tuning_cv_r2_delta": 0.0022435439729445728,
+  "cv_mean_minus_test_r2": -0.06983904996251944,
+  "feature_order": [
+    "OverallQual",
+    "GrLivArea",
+    "GarageCars",
+    "GarageArea",
+    "TotalBsmtSF",
+    "1stFlrSF",
+    "2ndFlrSF",
+    "FullBath",
+    "TotRmsAbvGrd",
+    "YearBuilt",
+    "YearRemodAdd",
+    "Fireplaces"
+  ],
+  "random_state": 42,
+  "cv": "KFold(n_splits=5, shuffle=False)"
+}
